@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="personal profile page of anjali">
+  <title>Anjali's Profile</title>
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ANJALI SAINI</h1>
+    <h2>Welcome to my world</h2>
+    <p>This is Anjali and I'm a tech student.</p>
+  </header>
+
+  <button id="colorButton">Change Background Color</button>
+
+  <script>
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    document.getElementById('colorButton').addEventListener('click', function () {
+      document.body.style.backgroundColor = getRandomColor();
+    });
+  </script>
+
+  <hr>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I'm Anjali. Here's a little info about me. Experienced in HTML, CSS, JavaScript, Python, and Java. Familiar with C++, SQL, and PHP. Currently exploring TypeScript and React.</p>
+   
+  </section>
+</body>
+</html>
